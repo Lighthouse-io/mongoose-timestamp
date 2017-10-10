@@ -1,8 +1,8 @@
 {
-  "name": "mongoose-timestamp",
+  "name": "@lighthouse/mongoose-timestamp",
   "description": "Mongoose plugin that adds createdAt and updatedAt auto-assigned date properties",
-  "version": "0.6.0",
-  "author": "Nicholas Penree <nick@penree.com>",
+  "version": "1.0.0",
+  "author": "Jonathan Chrisp <jonathan@lighthouse.io>",
   "keywords": [
     "mongodb",
     "mongoose",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/drudge/mongoose-timestamp"
+    "url": "https://github.com/Lighthouse-io/mongoose-timestamp"
   },
   "devDependencies": {
     "mocha": "~2.5.3",
