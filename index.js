@@ -51,7 +51,7 @@ function timestampsPlugin(schema, options) {
                   return this["_" + createdAt] = this._id.getTimestamp();
               });
         }
-        schema.pre('save', function(next) {
+        schema.pre('validate', function(next) {
             if (this.isNew) {
                 var newDate = new Date;
                 if (createdAt) this[createdAt] = newDate;
@@ -69,7 +69,7 @@ function timestampsPlugin(schema, options) {
         if (dataObj[createdAt] || dataObj[updatedAt]) {
             schema.add(dataObj);
         }
-        schema.pre('save', function(next) {
+        schema.pre('validate', function(next) {
             if (!this[createdAt]) {
                 var newDate = new Date;
                 if (createdAt) this[createdAt] = newDate;
